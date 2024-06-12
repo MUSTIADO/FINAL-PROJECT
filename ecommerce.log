@@ -1,0 +1,26 @@
+2024-06-13 02:15:22,394 - ERROR - Error getting current user: [Errno 2] No such file or directory: 'session.txt'
+2024-06-13 02:17:48,646 - ERROR - Error getting current user: [Errno 2] No such file or directory: 'session.txt'
+2024-06-13 02:18:09,023 - ERROR - Error registering user: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.role AS users_role 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Annah', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-13 02:18:09,023 - ERROR - Error getting current user: [Errno 2] No such file or directory: 'session.txt'
+2024-06-13 02:18:30,148 - ERROR - Error logging in user: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.role AS users_role 
+FROM users 
+WHERE users.username = ? AND users.password = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('MUSTAFA', 'MUSTAFA', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-13 02:18:30,149 - ERROR - Error getting current user: [Errno 2] No such file or directory: 'session.txt'
+2024-06-13 02:34:38,194 - INFO - User logged out.
+2024-06-13 02:34:54,166 - ERROR - Error logging in user: (sqlite3.OperationalError) no such table: users
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.role AS users_role 
+FROM users 
+WHERE users.username = ? AND users.password = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Annah', 'Annah', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
